@@ -3,24 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Subhasish Roy - Agile Project Manager</title>
+    <title>Subhasish Roy - Sr. Technical Project Manager</title>
     <style>
+.read-more-btn {
+            background-color: #005f8f;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .read-more-btn:hover {
+            background-color: #004a70;
+        }
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 20px;
+}
+
+.testimonial-card {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-card p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             color: #333;
-            background-color: #f4f4f4;
+            background: linear-gradient(to bottom right, #0077B6, #FDFD96);
+            background-attachment: fixed;
         }
         header {
-            background: #0073e6;
+            background: rgba(255, 255, 255, 0.1);
             color: white;
             padding: 2rem 1rem;
             text-align: center;
         }
+        .profile-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+        }
+        .profile-picture {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid white;
+        }
         nav {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
             text-align: center;
-            background: #333;
+            background: rgba(0, 0, 0, 0.8);
             padding: 1rem 0;
         }
         nav a {
@@ -32,105 +80,388 @@
         nav a:hover {
             text-decoration: underline;
         }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
         section {
-            max-width: 900px;
-            margin: 2rem auto;
-            padding: 1rem;
-            background: white;
+            margin: 3rem auto;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.9);
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
         section h2 {
-            color: #0073e6;
+            color: #005f8f;
+            margin-bottom: 1.5rem;
+        }
+        .project-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
         }
         .project-card {
-            margin-bottom: 2rem;
-            padding: 1rem;
-            background: #f9f9f9;
-            border-left: 5px solid #0073e6;
+            padding: 1.5rem;
+            background: rgba(255, 255, 255, 0.7);
+            border-left: 5px solid #005f8f;
         }
         footer {
             text-align: center;
             padding: 1rem;
-            background: #333;
+            background: rgba(0, 0, 0, 0.5);
             color: white;
         }
         .button {
             display: inline-block;
-            padding: 0.5rem 1rem;
+            padding: 0.75rem 1.5rem;
             color: white;
-            background: #0073e6;
+            background: #005f8f;
             text-decoration: none;
             border-radius: 5px;
             margin-top: 1rem;
+            margin-right: 1rem;
         }
         .button:hover {
-            background: #005bb5;
+            background: #004a70;
+        }
+        @media (min-width: 768px) {
+            .project-grid {
+                grid-template-columns: 1fr 1fr;
+            }
         }
     </style>
 </head>
 <body>
     <header>
+        <div class="profile-container">
+            <img src="Profile Pic.jpg" alt="Subhasish Roy" class="profile-picture">
+        </div>
         <h1>Subhasish Roy</h1>
-        <p>Agile Project Manager | Cloud Migration Specialist | Strategic Consultant</p>
+        <p>Sr. Technical Project Manager | Cloud Migration Specialist | AI-Driven Optimization Expert</p>
     </header>
     <nav>
         <a href="#about">About</a>
-        <a href="#consulting">Consulting</a>
+        <a href="#expertise">Expertise</a>
+        <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
-        <a href="#tools">Tools</a>
+        <a href="#certifications">Certifications</a>
+<a href="#Skills & Technical Proficiencies">Skills & Technical Proficiencies</a>
+<a href="#testimonials">Testimonials</a>
         <a href="#contact">Contact</a>
     </nav>
-    <section id="about">
-        <h2>About Me</h2>
-        <p>With over 16 years of experience in technical project management, I specialize in leading Agile transformations, cloud migrations, and enterprise-level infrastructure upgrades. My expertise includes implementing scalable solutions, optimizing workflows, and delivering projects on time and within budget. Leveraging cutting-edge tools like Jira, Power BI, and generative AI, I align technical goals with strategic objectives.</p>
-    </section>
-    <section id="consulting">
-        <h2>Current Consulting Work</h2>
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>As a Sr. Technical Project Manager with over 16 years of experience, I've evolved from hands-on software testing to orchestrating multi-million dollar initiatives across diverse industries. My expertise spans cloud migrations, AI-driven optimizations, and enterprise-wide digital transformations, always at the forefront of technological advancements.</p>
+            <p>Key achievements include:</p>
+            <ul>
+                <li>Spearheading a $2M+ AWS cloud migration, achieving 20% cost reduction and 50% efficiency increase</li>
+                <li>Automating disaster response processes, improving efficiency by 40%</li>
+                <li>Leading a $650k PCI-DSS attestation program involving 50+ stakeholders</li>
+                <li>Implementing AI-enhanced security tools and predictive analytics</li>
+            </ul>
+            <p>Certified in AWS Cloud, AI, Agile, Scrum (CSM), and as a Project Management Professional (PMP)®, I combine technical acumen with strategic vision. My approach leverages cutting-edge technologies and Agile methodologies to deliver tangible results. Whether optimizing EPMOs, implementing FedRAMP-certified solutions, or enhancing cybersecurity measures, I'm committed to driving innovation and efficiency in every project.</p>
+            <p>My adaptability and continuous learning in AI and cloud technologies allow me to anticipate industry trends and position organizations at the forefront of technological advancements. I excel at translating complex technical concepts into actionable insights for stakeholders at all levels, fostering collaboration across diverse teams and continents.</p>
+            <p>Let's connect and explore how we can drive innovation and efficiency in your organization, navigating the ever-evolving landscape of technology together.</p>
+        </section>
+        <section id="expertise">
+            <h2>Areas of Expertise</h2>
+            <ul>
+                <li>Enterprise Project Management</li>
+                <li>Cloud Migration & Application Modernization</li>
+                <li>AI-Driven Process Optimization</li>
+                <li>Data Analytics & Visualization</li>
+                <li>Agile Methodologies</li>
+                <li>Compliance & Security Management</li>
+            </ul>
+        </section>
+        <section id="experience">
+    <h2>Professional Experience</h2>
+    <div class="project-grid">
         <div class="project-card">
-            <h3>SailPoint Identity Governance Deployment</h3>
-            <p><strong>Description:</strong> Enhancing user access management and compliance across client environments.</p>
-            <p><strong>Key Contributions:</strong> Developed project timelines, conducted risk assessments, and optimized resource allocation strategies.</p>
-            <p><strong>Outcome:</strong> Improved compliance by 30% and streamlined access management workflows.</p>
+            <h3>Process Improvement Consultant - American Red Cross KY</h3>
+            <p><strong>Nov 2024 - Present</strong></p>
+            <p>Automated real-time weather alerts and disaster updates using Python and Power BI, reducing manual effort by 50%. Designed interactive dashboards integrating National Weather Service API data. Streamlined disaster reporting processes, reducing reporting time by 40%.</p>
         </div>
         <div class="project-card">
-            <h3>Community-Based Project Management</h3>
-            <p><strong>Description:</strong> Supporting non-profits with project planning and resource management for community-focused initiatives.</p>
-            <p><strong>Key Contributions:</strong> Achieved cost savings of $15,000 by streamlining processes and optimizing deliverables.</p>
-        </div>
-    </section>
-    <section id="projects">
-        <h2>Key Projects</h2>
-        <div class="project-card">
-            <h3>AWS Cloud Migration</h3>
-            <p><strong>Description:</strong> Led a $2M AWS migration project, optimizing infrastructure and consolidating legacy systems.</p>
-            <p><strong>Outcome:</strong> Achieved $500K cost savings and increased scalability by 50%.</p>
+            <h3>Strategic Data & AI Project Manager - JerseySTEM</h3>
+            <p><strong>January 2025 - Present</strong></p>
+            <p>Led development of a Business Intelligence platform automating data collection and reporting. Implemented scalable workflows using RSS feeds, RPA bots, and AI-assisted searches. Built a centralized vector database for advanced semantic search and AI-driven analyses.</p>
         </div>
         <div class="project-card">
-            <h3>Agile Transformation at Walgreens</h3>
-            <p><strong>Description:</strong> Managed Agile transformation for a global Digital Asset Management platform (AEM 6.2).</p>
-            <p><strong>Outcome:</strong> Reduced delivery time by 20% and improved global brand consistency.</p>
+            <h3>Consultant - New Beginnings Law Center</h3>
+            <p><strong>December 2024 - Feb 2025</strong></p>
+            <p>Spearheaded Go-to-Market strategy for expansion into new counties. Conducted community analysis and created scalable operational frameworks.</p>
         </div>
-    </section>
-    <section id="tools">
-        <h2>Tools & Technologies</h2>
+        <div class="project-card">
+            <h3>Consultant - SailPoint Implementation Planning</h3>
+            <p><strong>October 2024 - Nov 2024</strong></p>
+            <p>Developed comprehensive project roadmap for SailPoint IAM implementation. Proposed strategies for automation in provisioning, role management, and certification workflows.</p>
+        </div>
+                <div class="project-card">
+            <h3>Senior Information Technology Project Manager - i3 Verticals</h3>
+            <p><strong>Mar 2022 - June 2024</strong></p>
+            <p>Led $2M+ AWS cloud migration, implemented Jira Service Management, and consolidated ConnectWise for ITSM. Developed enterprise-wide Vulnerability Management Program. Led PCI-DSS 2023 attestation program and Unified Salesforce Project rollout.</p>
+        </div>
+        <div class="project-card">
+            <h3>Program Manager - i3 Verticals Public Sector</h3>
+            <p><strong>Sep 2017 - Feb 2022</strong></p>
+            <p>Managed $900k+ implementation and migration of iLEMS COTS application to FedRAMP-certified Microsoft Azure cloud. Established unified electronic licensing platform supporting 150 programs across multiple states.</p>
+        </div>
+        <div class="project-card">
+            <h3>Agile Project Manager - Walgreens</h3>
+            <p><strong>Feb 2017 - Sep 2017</strong></p>
+            <p>Oversaw Digital Asset Management Project (AEM 6.2) with 30+ team members. Led Agile activities and collaborated with multiple teams to define project scope and review progress.</p>
+        </div>
+        <div class="project-card">
+            <h3>Project Manager - Comerica Bank</h3>
+            <p><strong>Jan 2015 - Feb 2017</strong></p>
+            <p>Implemented $8m+ Wire Fraud Solution including AML modules and IAM. Developed project lifecycle documentation and directed day-to-day project operations.</p>
+        </div>
+        <div class="project-card">
+            <h3>Scrum Master - Cognizant</h3>
+            <p><strong>Jun 2012 - Dec 2014</strong></p>
+            <p>Managed QA testing team of 20-25 members. Coordinated with multiple teams for PMS software upgrade deployed across 180+ properties in North America.</p>
+        </div>
+    </div>
+</section>
+        <section id="projects">
+            <h2>Key Projects</h2>
+            <div class="project-grid">
+<div class="project-card"> <h3>Business Intelligence Platform for Corporate Partnerships</h3> <h4>Role: Strategic Data & AI Project Manager</h4> <p><strong>Problem:</strong> Lack of a centralized system to gather, analyze, and distribute relevant news about potential corporate partners and donors for JerseySTEM, hindering efficient engagement and fundraising efforts.</p> <p><strong>Solution:</strong> Led the development of a comprehensive Business Intelligence platform using low-code/no-code solutions. Implemented automated data collection workflows, vector database integration, and AI-driven analysis tools to streamline corporate research and engagement processes.</p> <p><strong>Outcome:</strong> Enhanced JerseySTEM's ability to identify and engage with corporate partners, resulting in a 40% increase in potential donor leads and a 25% improvement in volunteer engagement through targeted information distribution.</p> <div class="project-details" style="display: none;"> <ul> <li>Designed and implemented a scalable workflow using Retool to automate the collection and processing of corporate news and data from multiple sources.</li> <li>Integrated vector database technology to enable advanced semantic search and AI-driven analyses of corporate profiles and news.</li> <li>Developed processes for managing a watch list of up to 1000 companies, including their foundations and employee resource groups.</li> <li>Implemented AI-assisted web searches and RSS feed integration to gather relevant news on corporate social responsibility, DEI initiatives, and STEM-related activities.</li> <li>Created a corporate profile dashboard providing comprehensive insights into potential partners, including engagement history and donation tracking.</li> <li>Collaborated with cross-functional teams to define and track outcome measures, ensuring alignment with JerseySTEM's strategic goals.</li> <li>Explored and evaluated various technologies including RPA bots, social media listening tools, and AI market research platforms to optimize data gathering and analysis processes.</li> </ul> </div> <button class="read-more-btn">Read More</button> </div>
+<div class="project-card">
+    <h3>Process Improvement Consultant - American Red Cross KY</h3>
+    <h4>Role: Process Improvement Consultant</h4>
+    <p><strong>Problem:</strong> Inefficient manual processes for disaster reporting and weather alert updates, leading to delays in response efforts and increased workload for staff.</p>
+    <p><strong>Solution:</strong> Automated real-time weather alerts and disaster updates using Python and Power BI. Designed interactive dashboards integrating National Weather Service API data, enabling real-time situational awareness. Streamlined disaster reporting workflows to reduce manual effort and improve efficiency.</p>
+    <p><strong>Outcome:</strong> Reduced manual effort by 50%, improved disaster reporting time by 40%, and enhanced decision-making capabilities through real-time data visualization.</p>
+    <div class="project-details" style="display: none;">
         <ul>
-            <li><strong>Agile Tools:</strong> Jira, Smartsheet, Confluence</li>
-            <li><strong>Cloud Technologies:</strong> AWS, Azure, Terraform</li>
-            <li><strong>Data Visualization:</strong> Power BI, Tableau</li>
-            <li><strong>Security:</strong> SailPoint, Tenable.io</li>
-            <li><strong>Programming:</strong> Python, SQL</li>
-            <li><strong>AI Tools:</strong> Microsoft Copilot, ChatGPT</li>
+            <li>Developed Python scripts to automate the extraction, transformation, and loading (ETL) of weather data from the National Weather Service API into Power BI dashboards.</li>
+            <li>Designed interactive dashboards in Power BI for real-time monitoring of weather alerts and disaster updates, providing actionable insights to response teams.</li>
+            <li>Streamlined disaster reporting processes by automating data entry and report generation workflows, reducing reporting time by 40%.</li>
+            <li>Collaborated with cross-functional teams to identify bottlenecks in existing workflows and implement scalable process improvements.</li>
+            <li>Trained staff on using new dashboards and automated workflows, ensuring smooth adoption of the updated processes.</li>
+            <li>Enabled faster decision-making during disaster response operations by providing real-time visualizations of critical weather data.</li>
+        </ul>
+    </div>
+    <button class="read-more-btn">Read More</button>
+</div>
+                <div class="project-card">
+                    <h3>AWS Migration and Infrastructure Optimization</h3>
+                    <h4>Role: Senior Information Technology Project Manager</h4>
+                    <p><strong>Problem:</strong> Outdated infrastructure and inefficient resource allocation.</p>
+                    <p><strong>Solution:</strong> Spearheaded $2M+ AWS cloud migration, implementing Jira Service Management and consolidating ConnectWise for ITSM.</p>
+                    <p><strong>Outcome:</strong> Achieved 20% cost reduction and 50% increase in operational efficiency through AI-driven predictive analytics.</p>
+<div class="project-details" style="display: none;">
+Spearheaded Enterprise-wide AWS cloud migration & application modernization initiatives ($2M+) through effective project leadership and infrastructure optimization, including implementation of Jira Service Management (JSM) and consolidation of ConnectWise application for ITSM. Orchestrated the phased shutdown of outdated infrastructure, reallocating resources more efficiently across new cloud services. Collaborate with InfoSecurity and develop a comprehensive enterprise-wide Vulnerability Management Program, incorporating KnowBe4 security awareness training across the organization. 
+<ul>
+  <li>Leveraged AI-driven predictive analytics to forecast cost savings, resulting in a 20% reduction, and optimized resource allocation to increase operational efficiency by 50%. </li>
+<li>Implemented AI-enhanced tools like Tenable.io for dynamic threat assessment across the enterprise</li>
+<li>Led EDW migration (ETL processes for data migration and integration projects), ensuring accurate data extraction, transformation, and loading across multiple platforms.</li>
+<li>Utilized generative AI tools for project planning, conducting risk analysis, and generating comprehensive reports.</li>
+<li>Enhanced data visibility by directing Unified Salesforce Project rollout and integrating CPQ for 2000+ Sales team across 6 verticals, the RFP team, and Marketing. This project involved integration between existing legacy ERP and Salesforce systems. Utilizing microservices, we managed the synchronization of customer data across these two platforms.</li>
+</ul>
+
+                </div>
+<button class="read-more-btn">Read More</button>
+</div>
+                <div class="project-card">
+                    <h3>PCI-DSS 2023 Attestation Program</h3>
+                    <h4>Role: Project Manager</h4>
+                    <p><strong>Problem:</strong> Complex compliance requirements and stakeholder management across multiple departments, third-party vendors and the Auditor(Schellman).</p>
+                    <p><strong>Solution:</strong> Led a $650k program involving 50+ stakeholders to ensure compliance with PCI DSS v4.0 standards. Conducted scope analysis, vulnerability scans, and quarterly penetration tests.</p>
+                    <p><strong>Outcome:</strong> Achieved full PCI DSS compliance, reducing audit preparation time by 30% and enhancing data security across the organization’s payment infrastructure. Improved collaboration between internal teams and external vendors, ensuring seamless compliance workflows.</p>
+<div class="project-details" style="display: none;">
+<ul>
+            <li>Conducted a comprehensive scope analysis to identify all systems, hardware, and software involved in cardholder data flow.</li>
+            <li>Managed quarterly vulnerability scans and penetration testing to identify and remediate security gaps.</li>
+            <li>Implemented robust access control measures to restrict unauthorized access to cardholder data.</li>
+            <li>Streamlined the Self-Assessment Questionnaire (SAQ) process, ensuring accurate documentation of compliance efforts.</li>
+            <li>Collaborated with third-party vendors to secure external connections and ensure compliance with PCI DSS standards.</li>
+            <li>Developed a centralized repository for audit logs, configurations, and compliance evidence, simplifying the audit process.</li>
+</ul>
+                </div>
+<button class="read-more-btn">Read More</button>
+</div>
+                <div class="project-card">
+                    <h3>Unified Salesforce Project</h3>
+                    <h4>Role: Project Manager</h4>
+                    <p><strong>Problem:</strong> Fragmented sales processes across multiple verticals, leading to inefficiencies in customer data management and sales operations.</p>
+                    <p><strong>Solution:</strong> Directed the enterprise-wide rollout of Salesforce Sales Cloud and CPQ (Configure, Price, Quote) integration for a sales team of 2000+ across three verticals. Conducted detailed business process analysis, defined project scope, and implemented a centralized CRM system to unify customer data and streamline workflows.</p>
+                    <p><strong>Outcome:</strong> Enhanced data visibility, improved sales forecasting accuracy by 35%, and reduced quote generation time by 50%, resulting in a 20% increase in sales productivity.</p>
+<div class="project-details" style="display: none;">
+        <ul>
+            <li>Conducted stakeholder interviews and workshops to identify pain points in existing sales processes and define project objectives.</li>
+            <li>Developed a comprehensive project plan, including timelines, milestones, and risk mitigation strategies, ensuring on-time delivery within budget.</li>
+            <li>Integrated Salesforce CPQ with legacy ERP systems to automate pricing, quoting, and contract management workflows.</li>
+            <li>Implemented advanced reporting dashboards in Salesforce for real-time tracking of sales performance metrics and pipeline health.</li>
+            <li>Trained 2000+ sales representatives across six verticals on Salesforce features and best practices, ensuring smooth adoption.</li>
+            <li>Collaborated with IT teams to ensure secure data migration from legacy systems to Salesforce with zero downtime.</li>
+            <li>Utilized Salesforce Chatter for real-time collaboration among cross-functional teams, improving communication efficiency by 40%.</li>
+        </ul>
+    </div>
+    <button class="read-more-btn">Read More</button>
+</div>
+                 <div class="project-card">
+                    <h3>iLEMS COTS Application Migration</h3>
+                    <h4>Role: Program Manager</h4>
+                    <p><strong>Problem:</strong> Outdated eLicensing software used by state agencies, which struggled to meet evolving regulatory requirements and lacked scalability for modern operations.</p>
+                    <p><strong>Solution:</strong> Managed a $900k+ implementation and migration of the iLEMS (Integrated Licensing and Enforcement Management System) COTS application to a FedRAMP-certified Microsoft Azure cloud. This included comprehensive stakeholder engagement, requirements gathering, and ensuring compliance with state-specific regulations. Oversaw the integration of credentialing, fee collection, inspections, and enforcement workflows into a unified platform.</p>
+                    <p><strong>Outcome:</strong> Delivered a modern, scalable electronic licensing platform supporting 150 programs across multiple states. Improved operational efficiency by 40%, reduced manual processing errors by 30%, and enhanced reporting capabilities for state agencies.</p>
+<div class="project-details" style="display: none;">
+<ul>
+            <li>Led end-to-end migration of the iLEMS application to Microsoft Azure, ensuring compliance with FedRAMP standards for cloud security.</li>
+            <li>Collaborated with state agencies to gather requirements and customize the platform to meet diverse regulatory needs.</li>
+            <li>Integrated credentialing workflows for professional licenses, fee collection systems for payments, and inspection modules for regulatory enforcement.</li>
+            <li>Streamlined enforcement actions by automating violation tracking and resolution processes.</li>
+            <li>Developed robust reporting tools, enabling real-time data insights for decision-making by state administrators.</li>
+            <li>Trained over 200 state agency staff on the new system through workshops and documentation to ensure smooth adoption.</li>
+            <li>Reduced system downtime during migration to near-zero, ensuring uninterrupted licensing operations for critical programs.</li>
+        </ul>
+    </div>
+    <button class="read-more-btn">Read More</button>
+</div>
+                <div class="project-card">
+                    <h3>Digital Asset Management Project</h3>
+                    <h4>Role: Agile Project Manager</h4>
+                    <p><strong>Problem:</strong> Inconsistent brand management, fragmented digital assets across multiple systems, and inefficient asset accessibility for global teams.</p>
+                    <p><strong>Solution:</strong> Oversaw the implementation of a centralized Digital Asset Management (DAM) platform (Adobe Experience Manager 6.2) with a team of 30+ members. Conducted stakeholder workshops to identify requirements, streamlined asset workflows, and ensured seamless integration with existing marketing tools. Led Agile ceremonies, including sprint planning, retrospectives, and daily stand-ups, to maintain project momentum.</p>
+                    <p><strong>Outcome:</strong> Improved global brand consistency by 40%, reduced asset retrieval time by 50%, and enhanced operational efficiency through 24/7 centralized asset accessibility. Enabled marketing teams to launch campaigns 30% faster by providing real-time access to approved assets.</p>
+<div class="project-details" style="display: none;">
+        <ul>
+            <li>Collaborated with global marketing teams to define metadata standards and taxonomy for organizing digital assets effectively.</li>
+            <li>Integrated DAM with existing CMS and CRM platforms to ensure seamless content delivery across multiple channels.</li>
+            <li>Developed user training materials and conducted workshops for over 200 employees to ensure smooth adoption of the new platform.</li>
+            <li>Implemented role-based access controls (RBAC) to enhance security and ensure compliance with data governance policies.</li>
+            <li>Optimized asset workflows by automating approval processes, reducing manual effort by 30%.</li>
+            <li>Provided real-time reporting dashboards for tracking asset usage, enabling data-driven decision-making for marketing strategies.</li>
+        </ul>
+    </div>
+    <button class="read-more-btn">Read More</button>
+                </div>
+                <div class="project-card">
+                    <h3>Wire Fraud Solution and IAM Implementation</h3>
+                    <h4>Role: Project Manager</h4>
+                    <p><strong>Problem:</strong> Vulnerability to wire fraud due to lack of robust anti-money laundering (AML) measures and inefficient access management systems across banking sites and services.</p>
+                    <p><strong>Solution:</strong> Implemented an $8M+ Wire Fraud Solution, integrating advanced AML modules and Identity Access Management (IAM) systems. Led cross-functional Agile teams to design and deploy fraud detection algorithms, automate compliance workflows, and centralize user access controls.</p>
+                    <p><strong>Outcome:</strong> Strengthened banking security by reducing fraudulent transactions by 60%, streamlined user access management processes, and ensured compliance with federal regulations, including FFIEC guidelines.</p>
+<div class="project-details" style="display: none;">
+        <ul>
+            <li>Designed and implemented fraud detection algorithms that leveraged machine learning to identify suspicious transactions in real-time.</li>
+            <li>Integrated AML modules with existing banking systems to automate transaction monitoring, flagging high-risk activities for review.</li>
+            <li>Deployed a centralized IAM solution to manage user roles, permissions, and authentication across multiple banking platforms.</li>
+            <li>Streamlined compliance workflows by automating audit trails and reporting processes, reducing manual effort by 40%.</li>
+            <li>Facilitated Agile ceremonies (daily stand-ups, sprint planning, retrospectives) to ensure timely delivery of project milestones.</li>
+            <li>Collaborated with cybersecurity teams to implement multi-factor authentication (MFA) and encryption protocols for enhanced security.</li>
+            <li>Trained over 150 employees on the new fraud prevention tools and IAM system to ensure smooth adoption across departments.</li>
+        </ul>
+    </div>
+    <button class="read-more-btn">Read More</button>
+</div>
+            </div>
+        </section>
+        <section id="certifications">
+            <h2>Certifications</h2>
+            <ul>
+                <li>Project Management Professional (PMP)® - Project Management Institute, 2024 – 2027</li>
+                <li>AWS Cloud Practitioner – AWS, 2025 – 2028</li>
+                <li>AWS AI Practitioner – AWS, 2025 - 2028</li>
+                <li>Generative AI Overview for Project Managers - Project Management Institute</li>
+                <li>Certified Scrum Master - Scrum Alliance, 2015 - 2027</li>
+            </ul>
+        </section>
+<section id="skills">
+        <h2>Skills & Technical Proficiencies</h2>
+        <ul>
+            <li><strong>Project Management:</strong> Agile methodologies, Scrum, MS Project, Jira, Smartsheet</li>
+            <li><strong>Cloud Technologies:</strong> AWS, Microsoft Azure, FedRAMP-certified solutions</li>
+            <li><strong>Data Analytics & Visualization:</strong> Power BI, Python, SQL</li>
+            <li><strong>AI:</strong> Generative AI, Natural Language Processing</li>
+            <li><strong>Security & Compliance:</strong> PCI-DSS, FFIEC guidelines, IAM systems</li>
+            <li><strong>CRM & Sales Tools:</strong> Salesforce, CPQ integration</li>
+            <li><strong>Development & Automation:</strong> Python scripting, ETL processes</li>
+            <li><strong>Business Intelligence:</strong> PowerBI, Tableau</li>
+            <li><strong>Collaboration Tools:</strong> Microsoft Office Suite, Google Workspace, Slack</li>
         </ul>
     </section>
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Interested in working together? Let’s connect!</p>
-        <a class="button" href="mailto:roy.subhasish@gmail.com">Email Me</a>
-        <p>Visit my <a href="https://linkedin.com/in/subhasish-roy-pmp-a-csm-csm-0364315" target="_blank">LinkedIn Profile</a>.</p>
-    </section>
+<section id="testimonials">
+    <h2>Testimonials</h2>
+    <div class="testimonial-grid">
+<div class="testimonial-card">
+<p>I am delighted to write this letter of recommendation for Subhasish Roy, a highly skilled and results-driven Technical Project Manager with whom I had the privilege of working at Comerica Bank on the Wire Fraud and Anti-Money Laundering (AML) solution. Subhasish played a critical role in the successful implementation of the bank’s Wire Fraud detection system, integrating advanced AML modules to enhance financial security and mitigate risks.
+
+During our time working together, Subhasish demonstrated exceptional project management expertise, strategic thinking, and technical acumen. He led the project’s execution with precision, ensuring seamless coordination between cross-functional teams, including IT Security, Compliance, and Vendor Management. His ability to navigate complex regulatory requirements while maintaining efficient project timelines was instrumental in achieving the bank’s fraud prevention objectives.
+
+One of Subhasish’s standout contributions was his leadership in rolling out an Identity and Access Management (IAM) framework, enhancing security protocols to prevent unauthorized access and fraudulent transactions. His proactive approach in fostering vendor relationships and contract negotiations ensured strict adherence to service level agreements (SLAs), optimizing system performance and reliability.
+
+Beyond his technical capabilities, Subhasish is an outstanding communicator and problem solver. His ability to engage stakeholders at all levels, from executive leadership to technical teams, was key to maintaining alignment and driving project success. He is detail-oriented, highly organized, and possesses a strong analytical mindset, making him a valuable asset in any organization looking to enhance its security and compliance framework.
+
+I highly recommend Subhasish for any senior project management or technology leadership role. His ability to deliver complex projects on time and within budget, coupled with his deep expertise in fraud prevention and risk management, makes him an invaluable addition to any team. </p>
+<p><strong>Rishab Srivastava, Vice President - Global Loan Ops Transformation at Citi </strong></p>
+
+
+<div class="testimonial-card">
+<p>I am thrilled to recommend Subhasish, who was my first lead at Cognizant when I joined the company fresh out of college in 2011. He was truly the best lead one could hope for during such a pivotal moment in my career, helping me transition smoothly from the college culture to a professional environment.
+
+Subhasish was always ready to lend a hand, ensuring that there was an incredible team spirit within our group. His approachable nature made it easy for us to seek guidance, and he fostered an atmosphere where collaboration thrived. Technically, he was exceptionally sound, but what stood out even more was his eagerness to learn alongside the team. This humility and commitment to growth inspired all of us to pursue our own learning journeys.
+
+It’s no surprise that everyone had nothing but good things to say about Subhasish. His dedication and expertise left a lasting impact on our team and me personally. I genuinely hope we have the opportunity to work together again in the future. </p>
+<p><strong>Girish Nayak, Senior Manager II - Data Engineering at MSD </strong></p>
+
+<div class="testimonial-card">
+<p>As an Executive Director/Managing Attorney of a legal nonprofit looking to expand our presence, I recently partnered with Subhasish, and I couldn't be more impressed with the results! From the moment I reached out, he showcased professionalism and a deep understanding of Program Management. Subhasish took the time to conduct thorough research specific to my area of practice, providing me with a development plan that truly catered to the needs of my nonprofit. His insight not only helped me understand the competitive landscape but also equipped me with the tools to enhance my program. Thank you, Subhasish, for your exceptional service—I look forward to continuing our collaboration!. </p>
+<p><strong>Elissa Lasserre, Executive Director at New Beginnings Law Center </strong></p>
+
+<div class="testimonial-card">
+<p>I had the privilege of working with Subhasish Roy (Roy) on several significant projects during our time together, including a large-scale AWS migration and ongoing support for a complex licensing software product.
+
+Roy’s work on the AWS migration stands out as a testament to his skills and perseverance. This project involved coordinating large, distributed teams across multiple subsidiaries and industries. Many stakeholders were initially hesitant about the changes required, but Roy approached this challenge with patience, professionalism, and a focus on building alignment. His ability to manage technical complexities, bring diverse perspectives together, and keep the project on track was critical to its success.
+
+In supporting the licensing software product, Roy demonstrated a deep commitment to resolving client concerns and collaborating with developers to deliver meaningful results. His dedication to improving the product and ensuring its success consistently made a positive impact.
+
+Roy’s combination of technical expertise, project management skills, and ability to navigate challenging situations makes him a valuable asset. It was a pleasure working alongside him, and I am confident he will continue to excel in any future endeavor. </p>
+<p><strong>Robert Carroll, CTO at Orbit Discovery </strong></p>
+
+<div class="testimonial-card">
+<p>During my time at i3 Verticals, I had the privilege of working alongside Roy, a truly exceptional Project Manager whose expertise consistently elevated team performance.
+
+What sets Roy apart is his unique combination of strategic thinking and hands-on project management expertise. He consistently delivered results on mission-critical security and compliance projects while maintaining the highest standards of quality. His methodical approach to building comprehensive business cases ensured that stakeholders at all levels clearly understood project value and expected outcomes.
+
+Beyond his technical prowess, what truly distinguishes Roy is his deeply human approach to leadership. He has a rare gift for seeing beyond roles and titles to connect with colleagues as people first. His genuine kindness and empathy created an environment where team members felt valued and supported, leading to stronger collaboration and better outcomes. During our time working together, his compassionate leadership style and willingness to support others made a lasting positive impact on both the team and me personally.
+
+Roy's leadership style fosters collaboration and drives teams toward excellence. He has a remarkable talent for breaking down complex technical challenges into manageable components while keeping sight of the bigger picture. His strong communication skills and stakeholder management abilities make him an invaluable asset to any organization looking for a seasoned IT project management professional.
+
+I wholeheartedly recommend Roy for IT management and leadership roles. His track record of successful project delivery, particularly in cloud migration and security initiatives, speaks volumes about his capabilities as a technology leader. </p>
+<p><strong>Abhishek Kardak, Technical Business Analyst at HCA Healthcare </strong></p>
+
+   </div>
+</section>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Interested in leveraging AI-driven project management for your organization? Let's connect!</p>
+            <a class="button" href="mailto:roy.subhasish@gmail.com">Email Me</a>
+            <a class="button" href="SRoy_CV_0.1.docx" download>View Resume</a>
+            <p>Visit my <a href="https://www.linkedin.com/in/subhasish-roy-pmp-a-csm-csm-0364315/" target="_blank">LinkedIn Profile</a> for more details on my professional experience.</p>
+        </section>
+    </div>
     <footer>
-        <p>&copy; 2024 Subhasish Roy. All rights reserved.</p>
+        <p>&copy; 2025 Subhasish Roy. All rights reserved.</p>
     </footer>
+<script>
+document.querySelectorAll('.read-more-btn').forEach(button => {
+    button.addEventListener('click', function() {
+        const details = this.previousElementSibling;
+        if (details.style.display === 'none') {
+            details.style.display = 'block';
+            this.textContent = 'Read Less';
+        } else {
+            details.style.display = 'none';
+            this.textContent = 'Read More';
+        }
+    });
+});
+</script>
 </body>
 </html>
